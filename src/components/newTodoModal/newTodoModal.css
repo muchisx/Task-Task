@@ -28,6 +28,9 @@
         align-items: center;
         justify-content: center;
 
+        height: auto;
+        
+
         padding: 28px 36px;
         border-radius: 20px;
 
@@ -50,21 +53,15 @@
 
         .new-todo-modal__textarea {
 
-            display:inline-block;
-            vertical-align:middle;
-
-            font-family: 'Inter';
-
-            height: 64rem;
+            
+            height: 64px;
             width: 100%;
             padding: 8px;
-            margin-bottom: 24px;
             border: none;
-            /* border: 1px solid rgba(0, 0, 0, 0.459); */
-
-            text-align: center;
-
+            margin-bottom: 24px;
             
+            font-family: 'Inter';
+            text-align: center;
 
             border-radius: 8px;
             box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.281);
@@ -76,7 +73,6 @@
         }
 
         .new-todo-modal__button {
-
 
             padding: 8px 12px;
 

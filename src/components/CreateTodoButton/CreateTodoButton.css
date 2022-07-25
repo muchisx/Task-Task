@@ -5,6 +5,9 @@
     align-items: center;
     justify-content: center;
 
+    
+    height: 48px;
+    width: 48px;
     position: fixed;
     bottom: 56px;
 
@@ -30,12 +33,12 @@
     line-height: 24rem;
 
     /* text-align: center; */
-    transform: translateY(-1rem);
+    transform: translateY(-1px);
 
     transition: transform 200ms ease;
 }
 
 .--modal-open span{
-    transform: rotate(45deg) scale(1.1) translateY(-1rem);
+    transform: rotate(45deg) scale(1.1) translateY(-1px);
  
 }
