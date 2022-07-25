@@ -1,4 +1,4 @@
-# [✍🏼 **Task-Task** ![open-link](https://muchisx.github.io/Task-Task/src/assets/App.css)](https://muchisx.github.io/Task-Task/)
+# [✍🏼 **Task-Task** ![open-link](https://muchisx.github.io/Task-Task/src/assets/svg/external.svg)](https://muchisx.github.io/Task-Task/)
 
 ## ✏️ **Hi, Welcome!**
 
