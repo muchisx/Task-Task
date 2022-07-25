@@ -1,0 +1,35 @@
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 100%;
+    padding: 12px;
+    overflow: hidden;
+    
+    border-radius: 12px;
+    background-color: white;
+
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+    .todo-item__status {
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .todo-item__text {
+        width: 80%;
+        word-wrap: break-word;
+        text-align: center;
+    }
+
+    .--completed {
+        text-decoration: line-through;
+    }
+
+    .todo-item__delete {
+        cursor: pointer;
+        user-select: none;
+    }

@@ -1,0 +1,41 @@
+
+.create-todo-button {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    bottom: 56px;
+
+    padding: 12px 16px;
+    border: none;
+
+    
+
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+
+    cursor: pointer;
+
+    z-index: 1;
+}
+
+.create-todo-button span {
+    display: block;
+
+    font-size: 24rem;
+    font-family: "Inter";
+    line-height: 24rem;
+
+    /* text-align: center; */
+    transform: translateY(-1rem);
+
+    transition: transform 200ms ease;
+}
+
+.--modal-open span{
+    transform: rotate(45deg) scale(1.1) translateY(-1rem);
+ 
+}

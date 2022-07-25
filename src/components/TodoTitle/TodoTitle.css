@@ -1,0 +1,19 @@
+.todo-title {
+
+    font-size: 44rem;
+
+    text-align: center;
+    margin-bottom: 40px;
+
+    user-select: none;
+
+    
+    /* Gradient Effect */
+    background: linear-gradient(135deg, #1393fc 30%, #ffe261 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-image: linear-gradient(135deg, #1393fc 30%, #ffe261 80%) 1;
+}

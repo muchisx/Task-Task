@@ -1,0 +1,26 @@
+/*  --------------------------------------------------
+                MUCHISX'S CSS RESET
+--------------------------------------------------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 6.25%;
+}
+
+body {
+    font-size: 16rem;
+    font-family: "Inter";
+    background-color: #eeeff1;
+    color: #1a1a1a;
+}
+
+/*  --------------------------------------------------
+                MAIN CSS BELOW
+--------------------------------------------------- */
+
+

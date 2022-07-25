@@ -1,0 +1,101 @@
+
+
+.new-todo-modal-container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+    border: none;
+
+    background-color: rgba(0, 0, 0, 0.28);
+}
+
+
+.new-todo-modal-container:not([open]) {
+    display: none;
+}
+
+    .new-todo-modal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        padding: 28px 36px;
+        border-radius: 20px;
+
+        background-color: rgb(255, 255, 255);
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+        .new-todo-modal__title {
+            margin-bottom: 32px;
+        }
+
+            .new-todo-modal__title span {
+                
+                /* Gradient Effect */
+                background: linear-gradient(135deg, #1393fc 30%, #ffe261 80%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+        .new-todo-modal__textarea {
+
+            display:inline-block;
+            vertical-align:middle;
+
+            font-family: 'Inter';
+
+            height: 64rem;
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 24px;
+            border: none;
+            /* border: 1px solid rgba(0, 0, 0, 0.459); */
+
+            text-align: center;
+
+            
+
+            border-radius: 8px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.281);
+        }
+
+        .new-todo-modal__textarea::placeholder {
+
+            font-family: 'Inter';
+        }
+
+        .new-todo-modal__button {
+
+
+            padding: 8px 12px;
+
+            border: none;
+            border-radius: 12px;
+
+            color: rgb(255, 255, 255);
+            font-family: 'Inter';
+            font-size: 14rem;
+            font-weight: 600;
+            
+
+            background: linear-gradient(135deg, #1393fc 30%, #ffda32 80%);
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.281);
+
+            cursor: pointer;
+        }
+
+        .new-todo-modal__button:hover {
+
+            background: linear-gradient(135deg, #028dff 30%, #fdd10a 80%);
+        }

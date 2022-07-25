@@ -1,0 +1,52 @@
+
+.todo-counter-skeleton,
+.todo-search-skeleton,
+.todo-item-skeleton {
+    border-radius: 12px;
+    background-color: rgba(201, 198, 198, 0.747);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+
+    animation-name: preloadAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    background: linear-gradient(to right, #eeeeee 0%, #cddaec 45%, #f7fce06c 120%);
+}
+
+@keyframes preloadAnimation{
+    0%{
+        background-position: calc(-60vw)
+    }
+    100%{
+        background-position: calc(100vw)
+    }
+}
+
+
+.todo-counter-skeleton {
+    height: 32px;
+    width: 240px;
+
+}
+
+.todo-search-skeleton {
+
+    height: 20px;
+    width: 160px;
+
+    border-radius: 8px;
+
+}
+
+.todo-list-skeleton {
+
+    width: clamp(280px, 60%, 640px);
+
+}
+
+    .todo-item-skeleton {
+
+        height: 44px;
+
+    }
