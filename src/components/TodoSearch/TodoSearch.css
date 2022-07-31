@@ -1,9 +1,9 @@
 .todo-search {
 
+
     padding: 4px;
 
     text-align: center;
-    
     margin-bottom: 20px;
     border-radius: 8px;
     border: none;
@@ -12,9 +12,18 @@
 }
 
 .todo-search::placeholder {
-
+    
     font-family: "Inter";
     text-align: center;
-    
     user-select: none;
+}
+
+.todo-search:disabled {
+
+    filter: blur(1px);
+}
+
+.todo-search:disabled::placeholder {
+
+    opacity: 0.6;
 }

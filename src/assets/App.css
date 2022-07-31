@@ -8,3 +8,26 @@
   padding: 32px;
   min-height: 100vh;
 }
+
+    .empty-state-text {
+
+        margin-top: 20px;
+
+
+        font-weight: 500;
+
+        line-height: 40rem;
+        text-align: center;
+    }
+
+        .empty-state-text span {
+
+            /* Gradient Effect */
+            background: linear-gradient(135deg, #0176d6 30%, #d3ac00 80%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            border-width: 0 0 1px 0;
+            border-style: solid;
+            border-image: linear-gradient(135deg, #0176d6 30%, #d3ac00 80%) 1;
+        }

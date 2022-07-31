@@ -1,7 +1,6 @@
 
 
-.new-todo-modal-container {
-
+.change-alert-modal-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,12 +16,11 @@
     background-color: rgba(0, 0, 0, 0.28);
 }
 
-
-.new-todo-modal-container:not([open]) {
+.change-alert-modal-container:not([open]) {
     display: none;
 }
 
-    .new-todo-modal {
+    .change-alert-modal {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -35,45 +33,25 @@
         box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
     }
 
-        .new-todo-modal__title {
+        .change-alert-modal__message {
+
+            font-weight: 500;
+            font-size: 18rem;
+
             margin-bottom: 32px;
         }
 
-            .new-todo-modal__title span {
+            .change-alert-modal__message span {
                 
                 /* Gradient Effect */
-                background: linear-gradient(135deg, #1393fc 30%, #ffe261 80%);
+                background: linear-gradient(135deg, #0176d6 30%, #d3ac00 80%);
                 background-clip: text;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
 
-        .new-todo-modal__textarea {
-
-            display:inline-block;
-            vertical-align:middle;
-
-            font-family: 'Inter';
-
-            height: 64rem;
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 24px;
-            border: none;
-
-            text-align: center;
-
-            border-radius: 8px;
-            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.281);
-        }
-
-        .new-todo-modal__textarea::placeholder {
-
-            font-family: 'Inter';
-        }
-
-        .new-todo-modal__button {
-
+        .change-alert-modal__button {
+            
             padding: 8px 12px;
 
             border: none;
@@ -91,7 +69,6 @@
             cursor: pointer;
         }
 
-        .new-todo-modal__button:hover {
-
+        .change-alert-modal__button:hover {
             background: linear-gradient(135deg, #028dff 30%, #fdd10a 80%);
         }

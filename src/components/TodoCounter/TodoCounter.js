@@ -7,7 +7,12 @@ const TodoCounter = ({todos}) => {
     const completedTodos = todos.filter(todo => todo.completed).length;
 
     return (
-        <h2 className="todo-counter">Completed {completedTodos} out of {todoCount}</h2>
+        <h2 className="todo-counter">
+            {todoCount
+                ? `Completed ${completedTodos} out of ${todoCount}`
+                : 'Welcome!'
+            }   
+        </h2>
     );
 }
 

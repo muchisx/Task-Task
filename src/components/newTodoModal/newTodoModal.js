@@ -1,23 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './newTodoModal.css';
-import { TodoContext } from '../../context/TodoContext';
 
-const NewTodoModal = () => {
+const NewTodoModal = ( { modalOpenState, setModalOpenState, addTodoItem} ) => {
 
     const [newTodoText, setNewTodoText] = React.useState('');
 
-    const { modalOpenState, setModalOpenState, addTodoItem} = React.useContext(TodoContext);
-
-    
 
     const handleChangeTextarea = (event) => {
-
 
         setNewTodoText(event.target.value);
     }
 
     const handleSubmit = (event) => {
+
         event.preventDefault();
 
         if(newTodoText) {

@@ -11,7 +11,7 @@ const TodoItem = (props) => {
                     : '⬜'
                 }
             </span>
-            <p className={`todo-item__text ${props.completed && '--completed'}`}>
+            <p className={`todo-item__text ${props.completed ? '--completed' : ''}`}>
                 {props.text}
             </p>
             <span className="todo-item__delete" onClick={props.deleteTodoItem}>🗑️</span>

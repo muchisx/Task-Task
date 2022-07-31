@@ -1,7 +1,7 @@
 import React from 'react';
 import "./TodoSearch.css"
 
-const TodoSearch = ({searchValue, setSearchValue}) => {
+const TodoSearch = ({searchValue, setSearchValue, todos}) => {
 
     const filterTodoItems = (e) => {
 
@@ -9,6 +9,7 @@ const TodoSearch = ({searchValue, setSearchValue}) => {
 
         console.log(e.target.value);
         console.log('filtering TodoItems');
+        console.log(todos);
     }
 
     return (
@@ -18,6 +19,8 @@ const TodoSearch = ({searchValue, setSearchValue}) => {
         placeholder="🔎 Filter"
         value={searchValue}
         onChange={filterTodoItems}
+        maxLength="20"
+        disabled={todos.length ? false : 'disabled'}
         />
     );
 }
