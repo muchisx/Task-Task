@@ -66,10 +66,10 @@ function App() {
                         {(!filteredTodos.length && !!todos.length) && <p className='empty-state-text'>None of your <span>Tasks</span> matches: <br/> 🔎<i> '{searchValue}'.</i></p>}
 
                         <TodoList
-                        
                             loading={loading}
-                            // /* ----OPTION 1---------- TodoItems rendered with render props ------------------- */
-                            onRender={filteredTodos.map(todo => 
+                        >
+                            
+                            {filteredTodos.map(todo => 
                                 <TodoItem 
                                     text={todo.text} 
                                     key={todo.text} 
@@ -78,19 +78,6 @@ function App() {
                                     deleteTodoItem={() => deleteTodoItem(todo.text)}
                                 />
                             )}
-                        >
-                            
-
-                            {/* ----OPTION 2---------- TodoItems rendered as children -------------------*/}
-                            {/* {filteredTodos.map(todo => 
-                                <TodoItem 
-                                    text={todo.text} 
-                                    key={todo.text} 
-                                    completed={todo.completed}
-                                    updateTodoStatus={() => updateTodoStatus(todo.text)}
-                                    deleteTodoItem={() => deleteTodoItem(todo.text)}
-                                />
-                            )} */}
 
                         </TodoList>
 

@@ -1,10 +1,7 @@
 import React from 'react';
 import './TodoList.css'
 
-const TodoList = ({ children, loading, onRender }) => {
-
-    // /* ----OPTION 1 AND 2---------- TodoItems rendered with children or with render props ------------------- */
-    const renderFunc = children || onRender; 
+const TodoList = ({ children, loading }) => {
 
     return (
         <section className="todo-list-container">
@@ -12,7 +9,7 @@ const TodoList = ({ children, loading, onRender }) => {
         {!loading && 
 
             <ul className="todo-list">
-                {renderFunc}
+                {children}
             </ul>
         }
         
